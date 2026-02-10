@@ -1,7 +1,7 @@
 const { ethers } = require('ethers');
-const LendingPlatformABI = require('../../contracts/artifacts/contracts/LendingPlatform.sol/LendingPlatform.json').abi;
-const LoanTokenABI = require('../../contracts/artifacts/contracts/LoanToken.sol/LoanToken.json').abi;
-const CreditScoreABI = require('../../contracts/artifacts/contracts/CreditScore.sol/CreditScore.json').abi;
+const LendingPlatformABI = require('../../../contracts/artifacts/contracts/LendingPlatform.sol/LendingPlatform.json').abi;
+const LoanTokenABI = require('../../../contracts/artifacts/contracts/LoanToken.sol/LoanToken.json').abi;
+const CreditScoreABI = require('../../../contracts/artifacts/contracts/CreditScore.sol/CreditScore.json').abi;
 
 const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
 const lendingPlatformContract = new ethers.Contract(

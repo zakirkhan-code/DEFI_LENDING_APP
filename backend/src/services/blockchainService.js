@@ -17,7 +17,7 @@ class BlockchainService {
 
   // Start listening to smart contract events
   startEventListeners() {
-    console.log('🎧 Starting blockchain event listeners...');
+    console.log(' Starting blockchain event listeners...');
 
     // Listen to LoanRequested events
     lendingPlatformContract.on(
@@ -237,7 +237,7 @@ class BlockchainService {
       }
     });
 
-    console.log('✅ Blockchain event listeners started successfully');
+    console.log(' Blockchain event listeners started successfully');
   }
 
   // Sync past events (optional - for initial setup)

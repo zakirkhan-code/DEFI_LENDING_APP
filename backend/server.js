@@ -43,7 +43,7 @@ app.use(require('./src/middleware/errorMiddleware'));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`📡 Network: ${process.env.BLOCKCHAIN_NETWORK}`);
-  console.log(`🌐 Environment: ${process.env.NODE_ENV}`);
+  console.log(` Server running on port ${PORT}`);
+  console.log(` Network: ${process.env.BLOCKCHAIN_NETWORK}`);
+  console.log(` Environment: ${process.env.NODE_ENV}`);
 });
